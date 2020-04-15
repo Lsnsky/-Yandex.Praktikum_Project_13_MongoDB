@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="style.d2bc744e2040fb959ebf.css">
+</head>
+
+<body>
+    <div class="root">
+        <header class="header root__section">
+            <img src="images/logo.svg" alt="mesto logo" class="logo">
+        </header>
+        <div class="profile root__section">
+            <div class="user-info">
+                <div class="user-info__photo"></div>
+                <div class="user-info__data">
+                    <h1 class="user-info__name">Jaques Causteau</h1>
+                    <p class="user-info__job">Sailor, Researcher</p>
+                    <button class="button user-info__edit">Edit</button>
+                </div>
+                <button class="button user-info__button">+</button>
+            </div>
+        </div>
+        <div class="places-list root__section">
+
+            <!-- Пример вёрстки карточки:
+            <template id="card-template">
+            <div class="place-card">
+                <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+                    <button class="place-card__delete-icon"></button>
+                </div>
+                <div class="place-card__description">
+                    <h3 class="place-card__name">Камчатка</h3>
+                    <button class="place-card__like-icon"></button>
+                </div>
+            </div>
+            </template>
+
+            конец примера. -->
+
+        </div>
+
+        <div class="popup">
+            <div class="popup__content">
+
+                <img src="images/close.svg" alt="close" class="popup__close">
+                <h3 class="popup__title">Новое место</h3>
+                <form class="form popup__form" name="new" novalidate>
+                    <div class="input__container">
+                        <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength="2" maxlength="30">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="input__container">
+                        <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type disabled='disabled' class="button popup__button">+</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup-edit">
+            <div class="popup__content">
+                <img src="images/close.svg" alt="close-edit" class="popup-edit__close-edit">
+                <h3 class="popup__title">Редактировать профиль</h3>
+                <form class="form popup__form-edit" name="edit" id="form" novalidate>
+                    <div class="input__container">
+                        <input id="name" type="text" name="name" class="popup__input popup__input_type_name-user" placeholder="Имя" required minlength="2" maxlength="30">
+                        <div class="error-message" id="error-name"></div>
+                    </div>
+                    <div class="input__container">
+                        <input id="about" type="text" name="job" class="popup__input popup__input_type_job" placeholder="О себе" required minlength="2" maxlength="30">
+                        <div class="error-message" id="error-about"></div>
+                    </div>
+                    <button class="button popup-edit__button-edit" id="button">Сохранить</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup-photo">
+            <div class="popup-photo__content">
+                <img src="images/close.svg" alt="close-photo" class="popup-photo__close-image">
+                <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="photo" class="popup-photo__image">
+            </div>
+        </div>
+    </div>
+    <!--    <script src="./scripts/Card.js"></script>
+    <script src="./scripts/CardList.js"></script>
+    <script src="./scripts/Popup.js"></script>
+    <script src="./scripts/PopupWithForm.js"></script>
+    <script src="./scripts/PopupNewPlace.js"></script>
+    <script src="./scripts/PopupWithFormPlace.js"></script>
+    <script src="./scripts/NewPlace.js"></script>
+    <script src="./scripts/PopupFoto.js"></script>
+    <script src="./scripts/UserInfo.js"></script>
+    <script src="./scripts/FormValidator.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="./script.js"></script>
+-->
+
+    <script src="main.b8b4133dadb65b994331.js"></script>
+
+</body>
+
+</html>
