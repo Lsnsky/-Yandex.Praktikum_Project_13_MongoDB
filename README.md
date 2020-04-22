@@ -2,7 +2,7 @@
 # Яндекс.Практикум
  
 
-## Проектная работа 13_v1.0.0
+## Проектная работа 13_v1.0.1
  
 
 ## MongoDB
@@ -13,7 +13,23 @@
 
 Изучение серверной разработки на MongoDB.  
 В работе применяются базы данных MongoDB для разработки бэкенда проекта Mesto и разработки API, согласно принципам REST.
-Актуальная версия проекта (v1.0.0) доступна по этой [ссылке](https://github.com/Lsnsky/-Yandex.Praktikum_Project_13_MongoDB.git)
+Актуальная версия проекта (v1.0.1) доступна по этой [ссылке](https://github.com/Lsnsky/-Yandex.Praktikum_Project_13_MongoDB.git)
+
+### История обновлений:
+  
+**Версия 1.0.1**
+
+<li>
+исправлена ошибка при повторной отправке запроса на удаление карточки без изменения _id в запросе
+<li>
+исправлена ошибка при отправке невалидного JSON объекта в запросе на создание карточки/пользователя
+<li>
+добавлена возможность обрабатывать дополнительные запросы:
+
+- PATCH /users/me — обновляет профиль
+- PATCH /users/me/avatar — обновляет аватар
+- PUT /cards/:cardId/likes — поставить лайк карточке
+- DELETE /cards/:cardId/likes — убрать лайк с карточки
 
  
 ### ПО для выполнения задания:
@@ -28,7 +44,7 @@ MongoDB
 MongoDB Compass Community
 <li>
 NPM-пакеты: 
-eslint, eslint-config-airbnb-base, eslint-plugin-import, express, mongoose
+eslint, eslint-config-airbnb-base, eslint-plugin-import, express, mongoose, body-parser, validator
 
   
   
